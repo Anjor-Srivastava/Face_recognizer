@@ -1,0 +1,9 @@
+body {
+    text-align: center;
+}
+
+.rec {
+    border: 1px solid black;
+    height: 300px;
+    width: 350px;
+}

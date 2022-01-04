@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Face Recognizer</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="icon.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank"></script>
+    </head>
+    <body>
+        <div class="container">
+            <center>
+                <h3>FACE RECOGNITION WEB APP</h3>
+                <h4>This web app is trained to recongnize the following people:</h4>
+                <ul class="list-group">
+                    <li class="list-group-item"><h4>Mother</h4></li>
+                    <li class="list-group-item"><h4>Father</h4></li>
+                    <li class="list-group-item"><h4>Grand mother</h4></li>
+                    <li class="list-group-item"><h4>Grand father</h4></li>
+                </ul>
+                <h4>Webcam view-</h4>
+                <div id="camera" class="rec"></div>
+                <br><br>
+                <img id="reasult" class="rec" style="display: none;"></div> <br><br>
+                <div id="identified" style="display: none;">
+                    <h4 id="identified_img"></h4>
+                    <h4 id="accuracy"><span>Accuracy: </span><span id="accuray_out"></span></h4>
+                </div> <br><br>
+                <button id="capture" class="btn btn-success btn-md" onclick="capture_image()">Caputre Image</button> <br><br>
+                <button id="identify" class="btn btn-info btn-md" style="display: none;" onclick="identify_img()">Identify Image</button>
+            </center>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
